@@ -5,7 +5,7 @@
         select * from `employee`;
     </select>
 
-    <select id="insert" resultType="int" parameterType="tws.entity.Employee">
+    <insert id="insert" parameterType="tws.entity.Employee">
        insert into `employee`(`id`,`name`,`age`) values(#{employee.id},#{employee.name},#{employee.age});
-    </select>
+    </insert>
 </mapper>
